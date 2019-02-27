@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <body>
+        <div class="container">
+          <div class="row">
+            {% for portfolio in portfolios.all %}
+            <div class="col-md-4"> 
+                <div class="card mb-4 shadow-sm">
+                  <img class="card-img-top" src="{{ portfolio.image.url }}" alt="card image" width="100%" height="300">
+                  <div class="card-body">
+                    <p class="card-text">{{ portfolio.description }}</p>
+                  </div>
+                </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+    </body>
+
+    <footer class="container">
+        <p>&copy; HANMINJI</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script></body>
+      </html>
+{% endblock %}
