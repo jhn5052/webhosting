@@ -1,7 +1,7 @@
 LikeLion 운영진 7기 과제
 ========================
 
-## 과제 3 : Heroku로 배포하기	
+## 과제 3 : aws로 배포하기	
 
  	* Django와 python을 이용한 Blog,  portfolio 페이지	
 	* home, portfolio, detail, new 페이지로 구성	
